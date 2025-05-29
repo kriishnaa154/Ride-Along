@@ -1,0 +1,32 @@
+allprojects {
+    repositories {
+        google()  // Required for Firebase and Google services
+        mavenCentral()
+    }
+}
+
+buildscript {
+    repositories {
+        google()  // Required to resolve Google services dependencies
+        mavenCentral()
+    }
+    dependencies {
+        // Add the classpath for the Google services plugin
+        classpath 'com.google.gms:google-services:4.3.15' // Update to latest Google services plugin version
+        classpath 'com.android.tools.build:gradle:8.2.1'
+
+    }
+}
+
+rootProject.buildDir = "../build"
+
+// Configuring subprojects
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Clean task to delete build directory
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
