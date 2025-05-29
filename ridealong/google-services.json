@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584215520335",
+    "project_id": "ride-along-f214e",
+    "storage_bucket": "ride-along-f214e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584215520335:android:a1a1a8a749dac7a9d8763a",
+        "android_client_info": {
+          "package_name": "com.ridealong"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJszREA0G-jyZY8OXZPM1j8c9pie04T1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
